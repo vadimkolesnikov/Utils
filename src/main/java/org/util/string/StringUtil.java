@@ -397,7 +397,7 @@ public class StringUtil implements Cloneable, Comparable<StringUtil>, Iterable<C
         private final int cursor;
 
 
-        public BuilderIterator (StringBuilder builder) {
+        public BuilderIterator(StringBuilder builder) {
             this.builder = builder;
             this.cursor = 0;
         }
@@ -412,6 +412,7 @@ public class StringUtil implements Cloneable, Comparable<StringUtil>, Iterable<C
             return null;
         }
     }
+
     @Override
     public Iterator<Character> iterator() {
         return new BuilderIterator(builder);
@@ -655,4 +656,4 @@ public class StringUtil implements Cloneable, Comparable<StringUtil>, Iterable<C
         System.out.println(a.insert(1, a));
 
     }
-}}
+}
